@@ -17,6 +17,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: rgb(28, 28, 28);
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    font-size: 5rem;
+    font-weight: 900;
+    padding: 1.5rem;
 }
 
 .board {
@@ -75,7 +83,7 @@ body {
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color: lightgray;
+    background-color: #C6FFDD97;
 }
 
 .cell.x::before,
@@ -155,8 +163,6 @@ body {
 .footer {
     margin-top: auto;
     font-size: 1.5rem;
-    color: rgb(28, 28, 28);
-    font-family: 'Roboto', sans-serif;
 }
 
 .fa-github {
