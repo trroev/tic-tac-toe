@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -8,12 +10,18 @@
 }
 
 body {
+    background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .board {
     width:  100vw;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -109,7 +117,7 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size)* .7);
-    background-color: white;
+    background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
 }
 
 .winning-message {
@@ -119,7 +127,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .75);
     justify-content: center;
     align-items: center;
     color: white;
@@ -141,4 +149,22 @@ body {
 
 .winning-message.show {
     display: flex;
+}
+
+
+.footer {
+    margin-top: auto;
+    font-size: 1.5rem;
+    color: rgb(28, 28, 28);
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-github {
+    color: rgb(28, 28, 28);
+    font-size: 1.6rem;
+    transition: transform 0.7s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotateY(360deg) scale(1.15);
 }
